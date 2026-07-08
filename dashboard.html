@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Panel Principal | Sistema de Turnos</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="dashboard-body">
+
+  <div class="dashboard-container">
+
+    <aside class="sidebar">
+
+      <div class="sidebar-logo">
+        <h2>Banco Digital</h2>
+        <p>Sistema de Turnos</p>
+      </div>
+
+      <nav class="sidebar-menu">
+
+        <a href="dashboard.html" class="active">
+          Inicio
+        </a>
+
+        <a href="generar-turno.html">
+          Generar turno
+        </a>
+
+        <a href="cola-espera.html">
+          Cola de espera
+        </a>
+
+        <a href="asesor.html">
+          Atención
+        </a>
+
+        <a href="historial.html">
+          Historial
+        </a>
+
+        <a href="reportes.html">
+          Reportes
+        </a>
+
+      </nav>
+
+      <button id="cerrarSesion" class="logout-button">
+        Cerrar sesión
+      </button>
+
+    </aside>
+
+    <main class="dashboard-main">
+
+      <header class="dashboard-header">
+
+        <div>
+          <h1>Panel principal</h1>
+          <p>Bienvenido al Sistema de Gestión de Turnos</p>
+        </div>
+
+        <div class="user-info">
+          Usuario: <strong id="nombreUsuario">admin</strong>
+        </div>
+
+      </header>
+
+      <section class="statistics">
+
+        <article class="stat-card">
+          <h3>Turnos atendidos</h3>
+          <p>284</p>
+        </article>
+
+        <article class="stat-card">
+          <h3>Turnos pendientes</h3>
+          <p>47</p>
+        </article>
+
+        <article class="stat-card">
+          <h3>Clientes en espera</h3>
+          <p>12</p>
+        </article>
+
+      </section>
+
+      <section class="quick-access">
+
+        <h2>Accesos rápidos</h2>
+
+        <div class="quick-grid">
+
+          <a href="generar-turno.html" class="quick-card">
+            <h3>Generar turno</h3>
+            <p>Registrar un nuevo turno de atención</p>
+          </a>
+
+          <a href="asesor.html" class="quick-card">
+            <h3>Atención</h3>
+            <p>Llamar y finalizar turnos</p>
+          </a>
+
+          <a href="reportes.html" class="quick-card">
+            <h3>Reportes</h3>
+            <p>Consultar estadísticas del sistema</p>
+          </a>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="js/dashboard.js"></script>
+
+</body>
+</html>

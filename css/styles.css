@@ -122,3 +122,88 @@ button:hover {
     padding: 40px 25px;
   }
 }
+/* =========================
+   GENERAR TURNO
+========================= */
+
+.turno-section {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 30px;
+  align-items: start;
+}
+
+.turno-form-card,
+.ticket-card {
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+}
+
+.turno-form-card h2 {
+  color: #0f172a;
+  margin-bottom: 25px;
+}
+
+.turno-form-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.turno-form-card label {
+  color: #334155;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.turno-form-card select {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 25px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background: white;
+  font-size: 16px;
+  outline: none;
+}
+
+.turno-form-card select:focus {
+  border-color: #2563eb;
+}
+
+.ticket-card {
+  text-align: center;
+  border-top: 6px solid #2563eb;
+}
+
+.ticket-card > p:first-child {
+  color: #64748b;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.ticket-card h2 {
+  color: #0b2867;
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.ticket-card #servicioTurno {
+  color: #334155;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.ticket-card span {
+  display: block;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .turno-section {
+    grid-template-columns: 1fr;
+  }
+}

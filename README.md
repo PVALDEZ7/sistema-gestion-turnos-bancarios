@@ -43,7 +43,7 @@ El prototipo del sistema fue elaborado en Figma.
 
 Enlace del prototipo:
 
-COLOCAR AQUÍ EL ENLACE DE FIGMA
+[COLOCAR AQUÍ EL ENLACE DE FIGMA](https://www.figma.com/make/EaCeWlgB1b03IoaBvjBABn/Sistema-de-Gesti%C3%B3n-de-Turnos?t=AsguwyKWW5E2vsZA-6)
 
 ## Estado del proyecto
 

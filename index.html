@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Sistema de Gestión de Turnos</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <main class="login-container">
+
+    <section class="login-info">
+      <h1>Banco Digital</h1>
+      <p>Sistema de Gestión de Turnos para Atención Bancaria</p>
+    </section>
+
+    <section class="login-form">
+
+      <h2>Iniciar sesión</h2>
+      <p>Ingrese sus credenciales para acceder</p>
+
+      <form id="loginForm">
+
+        <label for="usuario">Usuario</label>
+        <input
+          type="text"
+          id="usuario"
+          placeholder="Ingrese su usuario"
+          required
+        >
+
+        <label for="contrasena">Contraseña</label>
+        <input
+          type="password"
+          id="contrasena"
+          placeholder="Ingrese su contraseña"
+          required
+        >
+
+        <button type="submit">
+          Iniciar sesión
+        </button>
+
+        <p id="mensaje"></p>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

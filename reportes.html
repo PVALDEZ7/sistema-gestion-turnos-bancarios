@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Reportes | Sistema Bancario</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="dashboard-body">
+
+  <div class="dashboard-container">
+
+    <aside class="sidebar">
+
+      <div class="sidebar-logo">
+        <h2>Banco Digital</h2>
+        <p>Sistema de Turnos</p>
+      </div>
+
+      <nav class="sidebar-menu">
+        <a href="dashboard.html">Inicio</a>
+        <a href="generar-turno.html">Generar turno</a>
+        <a href="cola-espera.html">Cola de espera</a>
+        <a href="asesor.html">Atención</a>
+        <a href="historial.html">Historial</a>
+        <a href="reportes.html" class="active">Reportes</a>
+      </nav>
+
+      <button id="cerrarSesion" class="logout-button">
+        Cerrar sesión
+      </button>
+
+    </aside>
+
+    <main class="dashboard-main">
+
+      <header class="dashboard-header">
+
+        <div>
+          <h1>Reportes del sistema</h1>
+          <p>Resumen general de los turnos registrados</p>
+        </div>
+
+        <button id="imprimirReporte">
+          Imprimir reporte
+        </button>
+
+      </header>
+
+      <section class="reportes-estadisticas">
+
+        <article class="reporte-card">
+          <h3>Total de turnos</h3>
+          <p id="totalTurnosReporte">0</p>
+        </article>
+
+        <article class="reporte-card">
+          <h3>Turnos atendidos</h3>
+          <p id="atendidosReporte">0</p>
+        </article>
+
+        <article class="reporte-card">
+          <h3>Turnos pendientes</h3>
+          <p id="pendientesReporte">0</p>
+        </article>
+
+        <article class="reporte-card">
+          <h3>Turnos cancelados</h3>
+          <p id="canceladosReporte">0</p>
+        </article>
+
+      </section>
+
+      <section class="reportes-grid">
+
+        <article class="grafico-card">
+
+          <h2>Turnos por estado</h2>
+
+          <div class="barra-reporte">
+
+            <div class="barra-info">
+              <span>Atendidos</span>
+              <strong id="porcentajeAtendidos">0%</strong>
+            </div>
+
+            <div class="barra-fondo">
+              <div
+                id="barraAtendidos"
+                class="barra-progreso barra-verde">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="barra-reporte">
+
+            <div class="barra-info">
+              <span>Pendientes</span>
+              <strong id="porcentajePendientes">0%</strong>
+            </div>
+
+            <div class="barra-fondo">
+              <div
+                id="barraPendientes"
+                class="barra-progreso barra-amarilla">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="barra-reporte">
+
+            <div class="barra-info">
+              <span>Cancelados</span>
+              <strong id="porcentajeCancelados">0%</strong>
+            </div>
+
+            <div class="barra-fondo">
+              <div
+                id="barraCancelados"
+                class="barra-progreso barra-roja">
+              </div>
+            </div>
+
+          </div>
+
+        </article>
+
+        <article class="grafico-card">
+
+          <h2>Turnos por tipo de atención</h2>
+
+          <div id="reporteServicios">
+
+            <p class="sin-turnos">
+              No existen datos registrados
+            </p>
+
+          </div>
+
+        </article>
+
+      </section>
+
+      <section class="tabla-card">
+
+        <div class="tabla-header">
+          <h2>Resumen de servicios</h2>
+
+          <span id="fechaReporte">
+            Fecha actual
+          </span>
+        </div>
+
+        <div class="tabla-responsive">
+
+          <table>
+
+            <thead>
+              <tr>
+                <th>Tipo de atención</th>
+                <th>Cantidad</th>
+                <th>Porcentaje</th>
+              </tr>
+            </thead>
+
+            <tbody id="tablaReporteServicios">
+
+              <tr>
+                <td colspan="3">
+                  No existen datos registrados
+                </td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="js/reportes.js"></script>
+
+</body>
+</html>

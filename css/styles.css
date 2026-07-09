@@ -359,3 +359,150 @@ tbody tr:hover {
     gap: 12px;
   }
 }
+/* =========================
+   PANEL DEL ASESOR
+========================= */
+
+.asesor-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.atencion-card,
+.resumen-card {
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+}
+
+.atencion-card {
+  text-align: center;
+  border-top: 6px solid #2563eb;
+}
+
+.atencion-card > p:first-child {
+  color: #64748b;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.atencion-card h2 {
+  color: #0b2867;
+  font-size: 58px;
+  margin-bottom: 12px;
+}
+
+.atencion-card #servicioEnAtencion {
+  color: #334155;
+  font-size: 19px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.atencion-card #horaEnAtencion {
+  color: #64748b;
+  display: block;
+  margin-bottom: 28px;
+}
+
+.acciones-atencion {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.acciones-atencion button {
+  min-width: 180px;
+}
+
+.btn-finalizar {
+  background: #16a34a;
+}
+
+.btn-finalizar:hover {
+  background: #15803d;
+}
+
+.btn-cancelar {
+  background: #dc2626;
+}
+
+.btn-cancelar:hover {
+  background: #b91c1c;
+}
+
+button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+.resumen-card h2 {
+  color: #0f172a;
+  margin-bottom: 25px;
+}
+
+.resumen-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.resumen-item:last-child {
+  border-bottom: none;
+}
+
+.resumen-item span {
+  color: #475569;
+}
+
+.resumen-item strong {
+  color: #0b2867;
+  font-size: 24px;
+}
+
+.estado-atendido {
+  background: #dcfce7;
+  color: #166534;
+  padding: 6px 10px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.estado-cancelado {
+  background: #fee2e2;
+  color: #991b1b;
+  padding: 6px 10px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.estado-atencion {
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 6px 10px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .asesor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .acciones-atencion {
+    flex-direction: column;
+  }
+
+  .acciones-atencion button {
+    width: 100%;
+  }
+}

@@ -207,3 +207,155 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
+/* =========================
+   COLA DE ESPERA
+========================= */
+
+.cola-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.turno-actual-card,
+.siguientes-card,
+.tabla-card {
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+}
+
+.turno-actual-card {
+  text-align: center;
+  border-top: 6px solid #2563eb;
+}
+
+.turno-actual-card > p:first-child {
+  color: #64748b;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.turno-actual-card h2 {
+  font-size: 65px;
+  color: #0b2867;
+  margin-bottom: 12px;
+}
+
+.turno-actual-card #servicioActual {
+  color: #334155;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.turno-actual-card span {
+  color: #64748b;
+}
+
+.siguientes-card h2 {
+  color: #0f172a;
+  margin-bottom: 22px;
+}
+
+.lista-siguientes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.turno-siguiente {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.turno-siguiente strong {
+  color: #0b2867;
+  font-size: 20px;
+}
+
+.turno-siguiente span {
+  color: #64748b;
+}
+
+.sin-turnos {
+  color: #64748b;
+  text-align: center;
+  padding: 25px;
+}
+
+.tabla-card {
+  margin-top: 10px;
+}
+
+.tabla-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.tabla-header h2 {
+  color: #0f172a;
+}
+
+.tabla-header span {
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.tabla-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #0b2867;
+  color: white;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+.estado-pendiente {
+  background: #fef3c7;
+  color: #92400e;
+  padding: 6px 10px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .cola-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tabla-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
